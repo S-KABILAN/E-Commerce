@@ -65,6 +65,8 @@ app.delete('/delete/:id',async (req,res) => {
     await Product.findByIdAndDelete(product_id);
     res.send("Product deleted!");
 })
+
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
