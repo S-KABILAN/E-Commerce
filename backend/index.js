@@ -5,8 +5,6 @@ const { Product } = require("./models/product");
 const app = express();
 const port = 5000;
 
-
-
 mongoose
 .connect("mongodb://127.0.0.1/ECommerce")
 .then(() => console.log("Connected to MongoDB.."))
